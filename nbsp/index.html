@@ -1,85 +1,68 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="utf-8" />
-    <title>nbsp</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="columns">
-      <div class="column"></div>
-      <div class="column is-three-fifths">
-        <section class="section">
-          <div class="container">
-            <form>
-              <div class="field">
-                <label for="" class="label">Použití</label>
-                <div class="control">
-                  <label class="radio">
-                    <input
-                      type="radio"
-                      name="technology"
-                      value="email"
-                      id="email-radio"
-                      checked
-                    />
-                    email
-                  </label>
-                  <label class="radio">
-                    <input
-                      type="radio"
-                      name="technology"
-                      value="web"
-                      id="web-radio"
-                    />
-                    web
-                  </label>
-                </div>
-              </div>
-              <div class="field">
-                <label for="input_text" class="label">Původní text</label>
-                <textarea
-                  name="input_text"
-                  id="input_text"
-                  cols="30"
-                  rows="12"
-                  onkeyup="nbsp()"
-                  class="textarea"
-                ></textarea>
-              </div>
+<head>
+  <meta charset="utf-8" />
+  <title>nbsp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+</head>
 
-              <div class="field">
-                <label for="output_text" class="label">Výsledný text</label>
-                <textarea
-                  name="output_text"
-                  id="output_text"
-                  cols="30"
-                  rows="12"
-                  class="textarea"
-                ></textarea>
+<body>
+  <aside class="menu">
+    <p class="menu-label">
+      Tools
+    </p>
+    <ul class="menu-list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="is-active">nbsp</a></li>
+      <li><a>Lorem</a></li>
+      <li><a>Ipsum</a></li>
+    </ul>
+  </aside>
+  <div class="columns">
+    <div class="column"></div>
+    <div class="column is-three-fifths">
+      <section class="section">
+        <div class="container">
+          <form>
+            <div class="field">
+              <label for="" class="label">Použití</label>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="technology" value="email" id="email-radio" checked />
+                  email
+                </label>
+                <label class="radio">
+                  <input type="radio" name="technology" value="web" id="web-radio" />
+                  web
+                </label>
               </div>
+            </div>
+            <div class="field">
+              <label for="input_text" class="label">Původní text</label>
+              <textarea name="input_text" id="input_text" cols="30" rows="12" onkeyup="nbsp()"
+                class="textarea"></textarea>
+            </div>
 
-              <div class="field">
-                <button
-                  type="button"
-                  onclick="copy()"
-                  class="button is-primary is-medium has-text-weight-bold"
-                >
-                  Kopírovat
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
-      </div>
-      <div class="column"></div>
+            <div class="field">
+              <label for="output_text" class="label">Výsledný text</label>
+              <textarea name="output_text" id="output_text" cols="30" rows="12" class="textarea"></textarea>
+            </div>
+
+            <div class="field">
+              <button type="button" onclick="copy()" class="button is-primary is-medium has-text-weight-bold">
+                Kopírovat
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
+    <div class="column"></div>
+  </div>
 
-    <script src="nbsp.js"></script>
-  </body>
+  <script src="nbsp.js"></script>
+</body>
+
 </html>
