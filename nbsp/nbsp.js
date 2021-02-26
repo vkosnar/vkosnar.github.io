@@ -4,8 +4,6 @@ function nbsp() {
   document.querySelector('#output_text').value = document
     .querySelector('#input_text')
     .value.concat('\n')
-    .replace(/([0-9]+) /g, '$1&nbsp;')
-    .replace(/([0-9]+\.) /g, '$1&nbsp;')
     .replace(/([0-9]+) ([0-9]+)/g, '$1&nbsp;$2')
     .replace(/(te) (se |si )/gi, '$1&nbsp;$2')
     .replace(
@@ -23,7 +21,7 @@ function nbsp() {
     document.querySelector('#output_text').value = document
       .querySelector('#output_text')
       .value.replace(/\n/g, '<br/>');
-  } else if (document.querySelector('#web-radio').checked) {
+  } else {
     document.querySelector('#output_text').value = '<p>'
       .concat(
         document
