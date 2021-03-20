@@ -5,81 +5,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>nbsp</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
-  <style>
-    .button.is-primary,
-    .button.is-primary:hover {
-      background-color: #3273DC;
-    }
-
-    .button.is-primary:active {
-      background-color: #5188E1;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <div class="columns">
-    <div class="column is-one-fifth">
-      <div class="container p-3">
-        <aside class="menu">
-          <p class="menu-label">
-            General
-          </p>
-          <ul class="menu-list">
-            <li><a href="../index.html">Home</a></li>
-            <li><a>Lorem</a></li>
-            <li><a>Ipsum</a></li>
-          </ul>
-          <p class="menu-label">
-            Tools
-          </p>
-          <ul class="menu-list">
-            <li><a class="is-active">nbsp</a></li>
-            <li><a>Lorem</a></li>
-            <li><a>Ipsum</a></li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-    <div class="column">
-      <section class="section">
-        <div class="container">
-          <form>
-            <div class="field">
-              <label for="" class="label">Použití</label>
-              <div class="control">
-                <label class="radio">
-                  <input type="radio" name="technology" value="email" id="email-radio" checked />
-                  email
-                </label>
-                <label class="radio">
-                  <input type="radio" name="technology" value="web" id="web-radio" />
-                  web
-                </label>
-              </div>
-            </div>
-            <div class="field">
-              <label for="input_text" class="label">Původní text</label>
-              <textarea name="input_text" id="input_text" cols="30" rows="12" onkeyup="nbsp()"
-                class="textarea"></textarea>
-            </div>
-
-            <div class="field">
-              <label for="output_text" class="label">Výsledný text</label>
-              <textarea name="output_text" id="output_text" cols="30" rows="12" class="textarea"></textarea>
-            </div>
-
-            <div class="field">
-              <button type="button" onclick="copy()" class="button is-primary is-medium has-text-weight-bold">
-                Kopírovat
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </div>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">home</a></li>
+        <li class="underline">&amp;nbsp;</li>
+        <li><a>lorem</a></li>
+        <li><a>ipsum</a></li>
+        <li><a>dolor</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article>
+      <h1>Doplnění &amp;nbsp; do&nbsp;textu</h1>
+      <form>
+        <label>
+          <input type="radio" name="technology" value="email" id="email-radio" checked />
+          email
+        </label>
+        <label>
+          <input type="radio" name="technology" value="web" id="web-radio" />
+          web
+        </label>
+        <label for="input_text">Původní text
+        </label>
+        <textarea name="input_text" id="input_text" cols="30" rows="12" onkeyup="nbsp()"></textarea>
+        <label for="output_text">Výsledný text
+        </label>
+        <textarea name="output_text" id="output_text" cols="30" rows="12"></textarea>
+        <button type="button" onclick="copy()">
+          Kopírovat
+        </button>
+      </form>
+    </article>
+  </section>
 
   <script src="nbsp.js"></script>
 </body>
