@@ -53,6 +53,8 @@ form > * {
 
 textarea {
   border: 1px solid #212121;
+  font-family: monospace;
+  padding: 5px;
 }
 
 button, input[type="submit"] {
