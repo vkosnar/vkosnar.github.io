@@ -70,6 +70,12 @@ button:hover, input[type="submit"]:hover {
   background-color: #d6d6d6;
 }
 
+button:active, input[type="submit"]:active {
+  background-color: #ababab;
+  box-shadow: -2px -2px #212121;
+  color: #212121;
+}
+
 .underline, nav a:hover {
   box-shadow: 0 5px #fa7268;
 }
