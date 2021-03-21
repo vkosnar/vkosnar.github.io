@@ -10,40 +10,36 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../">home</a></li>
-        <li><a>&amp;nbsp;</a></li>
-        <li><a href="#">lorem</a></li>
-        <li><a href="#">ipsum</a></li>
-        <li><a href="#">dolor</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="../">home</a></li>
+      <li><a>&amp;nbsp;</a></li>
+      <li><a href="#">lorem</a></li>
+      <li><a href="#">ipsum</a></li>
+      <li><a href="#">dolor</a></li>
+    </ul>
+  </nav>
   <section>
-    <article>
-      <h1>Doplnění &amp;nbsp; do&nbsp;textu</h1>
-      <form>
-        <label>
-          <input type="radio" name="technology" value="email" id="email-radio" checked />
-          email
-        </label>
-        <label>
-          <input type="radio" name="technology" value="web" id="web-radio" />
-          web
-        </label>
-        <label for="input_text">Původní text
-        </label>
-        <textarea name="input_text" id="input_text" cols="30" rows="12" onkeyup="nbsp()"></textarea>
-        <label for="output_text">Výsledný text
-        </label>
-        <textarea name="output_text" id="output_text" cols="30" rows="12"></textarea>
-        <button type="button" onclick="copy()">
-          Kopírovat
-        </button>
-      </form>
-    </article>
+    <h1>Doplnění &amp;nbsp; do&nbsp;textu</h1>
+    <form>
+      <label>
+        <input type="radio" name="technology" value="email" id="email-radio" checked />
+        email
+      </label>
+      <label>
+        <input type="radio" name="technology" value="web" id="web-radio" />
+        web
+      </label>
+      <label for="input_text">Původní text
+      </label>
+      <textarea name="input_text" id="input_text" cols="30" rows="12" onkeyup="nbsp()"></textarea>
+      <label for="output_text">Výsledný text
+      </label>
+      <textarea name="output_text" id="output_text" cols="30" rows="12"></textarea>
+      <button type="button" onclick="copy()">
+        Kopírovat
+      </button>
+    </form>
   </section>
 
   <script src="nbsp.js"></script>
