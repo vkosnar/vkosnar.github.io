@@ -23,7 +23,7 @@ nav {
   font-weight: bold;
 }
 
-nav > ul {
+nav ul {
   display: flex;
   justify-content: space-between;
 }
@@ -78,6 +78,6 @@ button:active, input[type="submit"]:active {
   color: #212121;
 }
 
-.underline, nav a:hover {
+nav a:not([href]), nav a:hover {
   box-shadow: 0 5px #fa7268;
 }
