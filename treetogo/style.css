@@ -85,7 +85,7 @@ p {
   padding-bottom: 1rem;
 }
 
-input, select {
+input {
   display: block;
   width: 100%;
   font-size: 1.2rem;
@@ -97,23 +97,6 @@ input, select {
   outline: none;
   font-family: "Poppins", sans-serif;
   text-align: center;
-}
-
-select {
-  appearance: none;
-}
-
-label > input {
-  display: inline;
-  width: auto;
-}
-
-label > a {
-  text-decoration: underline;
-}
-
-label > a:hover {
-  color: #373737;
 }
 
 button {
@@ -177,18 +160,5 @@ footer a {
 
   form {
     margin: 0 1rem;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  label {
-    display: block;
-    font-size: 0.8rem;
-    padding-bottom: 0.5rem;
-  }
-
-  input[type="checkbox"] {
-    margin: 0;
-    padding: 0;
   }
 }
