@@ -45,6 +45,14 @@ p {
   line-height: 1.5;
 }
 
+section a {
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: #fa7268;
+}
+
 form > * {
   display: block;
   width: 100%;
