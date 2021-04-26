@@ -1,25 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  background-color: #eaeaea;
-  color: #212121;
-  font-family: monospace;
-  font-size: 18px;
+  background: #212121;
+  color: #eaeaea;
+  font-family: "VT323", monospace;
+	font-size: 1.75em;
+  line-height: 1.2;
 }
 
 body > * {
   width: 100%;
-  max-width: 720px;
-  background-color: #f8f8f8;
-  box-shadow: 5px 5px #bbbbbb;
+  max-width: 800px;
 }
 
-nav {
+nav, section {
   margin: auto;
-  padding: 1.2rem 2rem;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
 }
 
 nav ul {
@@ -27,62 +27,50 @@ nav ul {
   justify-content: space-between;
 }
 
-nav a:not([href]), nav a:hover {
-  box-shadow: 0 5px #fa7268;
+a:before, button:before, input[type="submit"]:before {
+	color: #00dd00;
+	content: '[';
 }
 
-section {
-  margin: 2rem auto;
-  padding: 2rem;
+a:after, button:after, input[type="submit"]:after  {
+	color: #00dd00;
+	content: ']';
+}
+
+a:not([href]), a:hover, button:hover, input[type="submit"]:hover {
+  color: #00dd00;
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-p {
-  line-height: 1.5;
-}
-
-section a {
-  text-decoration: underline;
-}
-
-section a:hover {
-  color: #fa7268;
+  text-transform: uppercase;
+  margin: 1rem 0 0.25rem;
 }
 
 form > * {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
-  font-family: monospace;
-}
-
-textarea, button, input[type="submit"] {
-  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "VT323", monospace;
   border: 1px solid #212121;
+  outline: 0;
+  background: transparent;
 }
 
 button, input[type="submit"] {
-  border-radius: 0;
-  box-shadow: 2px 2px #212121;
-  font-weight: bold;
-  text-transform: uppercase;
+  width: auto;
   font-size: 1.2em;
+  color: #eaeaea;
+  padding: 0;
 }
 
-button:hover, input[type="submit"]:hover {
-  background-color: #d6d6d6;
-}
-
-button:active, input[type="submit"]:active {
-  background-color: #ababab;
-  box-shadow: -2px -2px #212121;
-  color: #212121;
-}
-
-button:last-child, input:last-child {
-  margin-bottom: 0;
+textarea, input[type="text"] {
+  resize: none;
+  border: 1px solid #00dd00;
+  padding: 0.1rem 0.4rem;
+  color: #eaeaea;
+  font-size: 0.8rem;
 }
