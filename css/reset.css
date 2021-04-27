@@ -53,3 +53,11 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}

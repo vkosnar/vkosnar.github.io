@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   background: #212121;
   color: #eaeaea;
@@ -72,5 +68,11 @@ textarea, input[type="text"] {
   border: 1px solid #00dd00;
   padding: 0.1rem 0.4rem;
   color: #eaeaea;
+  caret-color: #00dd00;
   font-size: 0.8rem;
+}
+
+*::selection {
+  background-color: #00dd00;
+  color: #212121;
 }
