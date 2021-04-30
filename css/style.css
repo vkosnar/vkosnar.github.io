@@ -69,6 +69,7 @@ textarea, input[type="text"] {
   padding: 0.1rem 0.4rem;
   color: #eaeaea;
   caret-color: #00dd00;
+  caret-shape: block;
   font-size: 0.8rem;
 }
 
