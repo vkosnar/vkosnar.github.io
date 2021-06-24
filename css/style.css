@@ -4,7 +4,7 @@ html {
   background: #212121;
   color: #eaeaea;
   font-family: "VT323", monospace;
-	font-size: 1.75em;
+  font-size: 1.75em;
   line-height: 1.2;
 }
 
@@ -23,13 +23,13 @@ nav li {
 }
 
 a:before, button:before, input[type="submit"]:before {
-	color: #00dd00;
-	content: '[';
+  color: #00dd00;
+  content: '[';
 }
 
 a:after, button:after, input[type="submit"]:after  {
-	color: #00dd00;
-	content: ']';
+  color: #00dd00;
+  content: ']';
 }
 
 a:not([href]), a:hover, button:hover, input[type="submit"]:hover {
