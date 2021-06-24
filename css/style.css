@@ -36,7 +36,7 @@ a:not([href]), a:hover, button:hover, input[type="submit"]:hover {
   color: #00dd00;
 }
 
-a:hover, button:hover, input[type="submit"]:hover {
+a:hover, button:hover, input[type="submit"]:hover, input[type="radio"]:hover, input[type="checkbox"]:hover {
   cursor: pointer;
 }
 
