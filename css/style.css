@@ -32,7 +32,7 @@ a:after, button:after, input[type="submit"]:after  {
   content: ']';
 }
 
-a:not([href]), a:hover, button:hover, input[type="submit"]:hover {
+a:not([href]), a:hover, button:hover, input[type="submit"]:hover, hr {
   color: #00dd00;
 }
 
